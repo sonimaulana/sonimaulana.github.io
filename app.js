@@ -26,10 +26,6 @@ app.use(bodyParser.json())
 
 
 app.get('/', (req, res) => {
-    res.send('Hello World')
-})
-
-app.get('/camera', (req, res) => {
     res.render('camera', {
         tittle: 'Halaman Camera',
         layout: 'layouts/main-layouts'
